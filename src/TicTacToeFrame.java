@@ -56,16 +56,16 @@ public class TicTacToeFrame extends JFrame {
                 moves++;
 
                 if (checkWin()) {
-                    JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " wins!");
+                    JOptionPane.showMessageDialog(null, currentPlayer + " wins!");
                     resetGame();
                 } else if (checkDraw()) {
-                    JOptionPane.showMessageDialog(null, "It's a draw!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
                     resetGame();
                 } else {
                     switchPlayer();
                 }
             } else {
-                JOptionPane.showMessageDialog(null, "Invalid move! Try again.");
+                JOptionPane.showMessageDialog(null, "That is an invalid move! Please try again.");
             }
         }
     }
